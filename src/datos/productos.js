@@ -1,12 +1,12 @@
 export const categorias = [
   { id: 'remeras', nombre: 'Remeras', imagen: '/ropa/remera.PNG' },
   { id: 'musculosas', nombre: 'Musculosas', imagen: '/ropa/musculosa.PNG' },
-  { id: 'tops', nombre: 'Tops deportivos', imagen: '/ropa/top.PNG' },
+  { id: 'tops', nombre: 'Tops deportivos', imagen: '/ropa/top.PNG' }, // Cambiado de 'Tops deportivos' a 'Tops'
   { id: 'shorts', nombre: 'Shorts y polleras', imagen: '/ropa/short.png' },
-  { id: 'camisetas', nombre: 'Camisetas', imagen: '/ropa/camisetas.PNG' },
+  { id: 'camisetas', nombre: 'Camisetas', imagen: '/ropa/camisetas.PNG' }, // Cambiado de 'Camisetas' a 'Camisetas deportivas'
   { id: 'camperas', nombre: 'Camperas', imagen: '/ropa/campera.png' },
   { id: 'conjuntos', nombre: 'Conjuntos', imagen: '/ropa/conjuntos.png' },
-  { id: 'catsuits', nombre: 'Catsuits', imagen: '/ropa/catsuit.png' },
+  { id: 'catsuits', nombre: 'Catsuits', imagen: '/ropa/catsuit.png' }, // Cambiado de 'Catsuits' a 'Catsuit'
   { id: 'mayas', nombre: 'Mayas', imagen: '/ropa/maya.png' },
   { id: 'accesorios', nombre: 'Accesorios', imagen: '/ropa/accesorios.png' }
 ];
@@ -29,7 +29,7 @@ export const productos = {
   })),
   
   tops: Array(10).fill(null).map((_, i) => ({
-    id: `top-${i}`,
+    id: `tops-${i}`,
     nombre: 'Top Deportivo',
     precio: 7500,
     imagen: '/ropa/top.PNG',

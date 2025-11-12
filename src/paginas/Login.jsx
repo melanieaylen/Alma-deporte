@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <main>
-      <form onSubmit={manejarEnvio}>
+      <form onSubmit={manejarEnvio} autoComplete="off">
         <h1 className="textLogin">Login</h1>
         <br />
         <label className="usuario"><strong>Usuario</strong></label><br />
@@ -26,16 +26,20 @@ const Login = () => {
           className="login" 
           value={usuario}
           onChange={(e) => setUsuario(e.target.value)}
+          autoComplete="off"
+          name="username"
           required
         />  
         <br />
         <label className="contraseña"><strong>Contraseña</strong></label><br />
-        <input 
-          type="password" 
-          className="login" 
-          value={contraseña}
-          onChange={(e) => setContraseña(e.target.value)}
-          required
+       <input 
+        type="password" 
+        className="login" 
+        value={contraseña}
+        onChange={(e) => setContraseña(e.target.value)}
+        autoComplete="new-password"
+        name={`password-${Math.random()}`}
+        required
         />
         <br />
         <input type="submit" className="enviar" value="Ingresar" />

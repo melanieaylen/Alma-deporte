@@ -5,7 +5,7 @@ const CarritoContexto = createContext();
 export const useCarrito = () => {
   const contexto = useContext(CarritoContexto);
   if (!contexto) {
-    throw new Error('useCarrito debe usarse dentro de ProveedorCarrito');
+    throw new Error('usarCarrito debe usarse dentro de ProveedorCarrito');
   }
   return contexto;
 };
@@ -13,19 +13,15 @@ export const useCarrito = () => {
 export const ProveedorCarrito = ({ children }) => {
   const [carrito, setCarrito] = useState([]);
 
-  // Cargar carrito del localStorage
+  // Cargar carrito del localStorage al iniciar
   useEffect(() => {
     const carritoGuardado = localStorage.getItem('carrito');
     if (carritoGuardado) {
-      try {
-        setCarrito(JSON.parse(carritoGuardado));
-      } catch (error) {
-        console.error('Error al cargar carrito:', error);
-      }
+      setCarrito(JSON.parse(carritoGuardado));
     }
   }, []);
 
-  // Guardar carrito en localStorage
+  // Guardar carrito en localStorage cuando cambie
   useEffect(() => {
     localStorage.setItem('carrito', JSON.stringify(carrito));
   }, [carrito]);
@@ -51,6 +47,21 @@ export const ProveedorCarrito = ({ children }) => {
   const eliminarDelCarrito = (nombreProducto) => {
     setCarrito(carritoAnterior => 
       carritoAnterior.filter(item => item.nombre !== nombreProducto)
+    );
+  };
+
+  const actualizarCantidad = (nombreProducto, nuevaCantidad) => {
+    if (nuevaCantidad <= 0) {
+      eliminarDelCarrito(nombreProducto);
+      return;
+    }
+    
+    setCarrito(carritoAnterior =>
+      carritoAnterior.map(item =>
+        item.nombre === nombreProducto
+          ? { ...item, cantidad: nuevaCantidad }
+          : item
+      )
     );
   };
 
@@ -105,19 +116,18 @@ export const ProveedorCarrito = ({ children }) => {
     alert(mensaje);
   };
 
-  const valorContexto = {
-    carrito,
-    agregarAlCarrito,
-    eliminarDelCarrito,
-    vaciarCarrito,
-    calcularTotal,
-    obtenerCantidadTotal,
-    finalizarCompra,
-    verCarrito
-  };
-
   return (
-    <CarritoContexto.Provider value={valorContexto}>
+    <CarritoContexto.Provider value={{
+      carrito,
+      agregarAlCarrito,
+      eliminarDelCarrito,
+      actualizarCantidad,
+      vaciarCarrito,
+      calcularTotal,
+      obtenerCantidadTotal,
+      finalizarCompra,
+      verCarrito
+    }}>
       {children}
     </CarritoContexto.Provider>
   );

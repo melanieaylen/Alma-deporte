@@ -1,68 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useCarrito } from '../contexto/CarritoContexto';
 
-const Encabezado = () => {
-  const { verCarrito, obtenerCantidadTotal } = useCarrito();
-  const cantidadTotal = obtenerCantidadTotal();
+const TarjetaProducto = ({ producto, esOferta = false }) => {
+  const { agregarAlCarrito } = useCarrito();
+
+  const manejarAgregar = () => {
+    agregarAlCarrito(producto);
+  };
 
   return (
-    <header>
-      <div className="encabezado">
-        <ul>
-          <li className="links">
-            <Link to="/">
-              <img src="/imagenes/alma.png" alt="Logo" width="70" height="70" />
-            </Link>
-          </li>
-          <strong>
-            <li className="links">
-              <Link to="/categorias">Categorias</Link>
-            </li>
-            <li className="links">
-              <Link to="/ofertas">Ofertas</Link>
-            </li>
-            <li className="links">
-              <Link to="/ubicacion">Ubicación</Link>
-            </li>
-            <li className="links">
-              <Link to="/ayuda">Ayuda</Link>
-            </li>
-          </strong>
-          <li className="iconos">
-            <Link to="/">
-              <img src="/imagenes/casa.png" alt="Home" width="30" height="30" />
-            </Link>
-          </li>
-          <li className="iconos">
-            <Link to="/login">
-              <img src="/imagenes/usuario.png" alt="Usuario" width="30" height="30" />
-            </Link>
-          </li>
-          <li className="iconos" style={{ position: 'relative', cursor: 'pointer' }}>
-            <div onClick={verCarrito}>
-              🛒
-              {cantidadTotal > 0 && (
-                <span style={{
-                  position: 'absolute',
-                  top: '-5px',
-                  right: '-5px',
-                  background: 'red',
-                  color: 'white',
-                  borderRadius: '50%',
-                  padding: '2px 6px',
-                  fontSize: '12px',
-                  fontWeight: 'bold'
-                }}>
-                  {cantidadTotal}
-                </span>
-              )}
-            </div>
-          </li>
-        </ul>
+    <div className="card">
+      {esOferta && producto.descuento && (
+        <div className="etiqueta-oferta">-{producto.descuento}% OFF</div>
+      )}
+      <img src={producto.imagen} alt={producto.nombre} />
+      <div className="card-body">
+        <h2 className="card-title">{producto.nombre}</h2>
+        {esOferta && producto.precioAnterior && (
+          <p className="precio-anterior">${producto.precioAnterior.toLocaleString()}</p>
+        )}
+        <p className="card-text">
+          <strong>${producto.precio.toLocaleString()}</strong>
+        </p>
+        <button onClick={manejarAgregar}>
+          <strong>Agregar al carrito</strong>
+        </button>
       </div>
-    </header>
+    </div>
   );
 };
 
-export default Encabezado;
+export default TarjetaProducto;
