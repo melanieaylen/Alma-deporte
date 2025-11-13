@@ -39,7 +39,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ### 1️⃣ Preparar el Entorno
 
-Crea una carpeta para el proyecto en tu ubicación preferida:
+Crea una carpeta para el proyecto:
 ```bash
 mkdir alma-deportes-proyecto
 cd alma-deportes-proyecto
@@ -60,13 +60,9 @@ Una vez dentro del directorio del proyecto, instala todas las dependencias neces
 npm install
 ```
 
-> ⏱️ Este proceso puede tomar algunos minutos dependiendo de tu conexión a internet.
-
----
-
 ## ▶️ Ejecución
 
-Para iniciar el servidor de desarrollo, ejecuta:
+Para iniciar el servidor, ejecuta:
 ```bash
 npm start
 ```
@@ -75,16 +71,6 @@ npm start
 ```
 http://localhost:3000
 ```
-
-### Comandos Adicionales
-
-| Comando | Descripción |
-|---------|-------------|
-| `npm start` | Inicia el servidor de desarrollo |
-| `npm run build` | Genera la versión de producción |
-| `npm test` | Ejecuta las pruebas |
-
----
 
 ## 🛠️ Tecnologías
 
@@ -97,26 +83,8 @@ Este proyecto está construido con:
 
 ---
 
-## 📞 Soporte
-
-Si encuentras algún problema durante la instalación o ejecución:
-
-1. Verifica que tengas instalada la versión correcta de Node.js: `node --version`
-2. Asegúrate de estar en el directorio correcto del proyecto
-3. Intenta eliminar `node_modules` y volver a ejecutar `npm install`
-
----
-
-## 📄 Licencia
-
-Este proyecto es parte de un emprendimiento educativo.
-
----
-
 <div align="center">
 
-**Desarrollado con ❤️ por el equipo de Alma Deportes**
-
-[🔝 Volver arriba](#-alma-deportes)
+[🔝 Volver arriba](#-alma-deportes---emprendimiento-de-ropa-deportiva)
 
 </div>
