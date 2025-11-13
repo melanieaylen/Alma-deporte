@@ -25,9 +25,9 @@ Antes de comenzar, asegúrate de tener instalado:
 
 | Herramienta | Versión Requerida |
 |-------------|-------------------|
-| **Node.js** | `24.11.1 (LTS)` o superior |
+| **Node.js** | `24.11.1 (LTS)`|
 | **Visual Studio Code** | `1.93.0` o superior |
-| **Git** | Última versión |
+| **Git** | Última versión o desde tu navegador web|
 
 ### Sistema Operativo
 - **Plataforma objetivo**: Windows (Escritorio)
