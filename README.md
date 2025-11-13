@@ -82,9 +82,3 @@ Este proyecto está construido con:
 - **npm** - Gestor de paquetes
 
 ---
-
-<div align="center">
-
-[🔝 Volver arriba](#-alma-deportes---emprendimiento-de-ropa-deportiva)
-
-</div>
