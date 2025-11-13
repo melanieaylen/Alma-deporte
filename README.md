@@ -1,6 +1,6 @@
-# 🏃‍♀️ Alma Deportes
+# 🏃‍♀️ Alma Deportes - Emprendimiento de ropa deportiva
 
-> Emprendimiento de ropa deportiva desarrollado con React
+> Página de Alma deportes desarrollado con React
 
 ## 👥 Equipo de Desarrollo
 
