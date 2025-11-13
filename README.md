@@ -1,40 +1,122 @@
-# Emprendimiento de ropa - Alma Deportes 
+# 🏃‍♀️ Alma Deportes
 
-## 👥 Integrantes del Grupo
-- Illa Cardozo Benjamín, Martínez Melanie, Romero Maitena
+> Emprendimiento de ropa deportiva desarrollado con React
 
-# Descargar el proyecto con Git Hub desde la terminal  
-## 🛠️ Tecnologías Necesarias
-- **Lenguaje**: JavaScript
-- **Biblioteca**: React
-- **Visual Studio Code**: Versión `1.93.0` o posterior
-- **Node.js**: Versión `24.11.1 (LTS)`
-- **Plataformas Objetivo**: Escritorio (Windows)
+## 👥 Equipo de Desarrollo
 
-## 🚀 Cómo Clonar el repositorio y ejecutar el programa
+- **Illa Cardozo Benjamín**
+- **Martínez Melanie**
+- **Romero Maitena**
 
-### Clonar repositorio
+---
+
+## 📋 Tabla de Contenidos
+
+- [Requisitos Previos](#-requisitos-previos)
+- [Instalación](#-instalación)
+- [Ejecución](#️-ejecución)
+- [Tecnologías](#-tecnologías)
+
+---
+
+## 🔧 Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+| Herramienta | Versión Requerida |
+|-------------|-------------------|
+| **Node.js** | `24.11.1 (LTS)` o superior |
+| **Visual Studio Code** | `1.93.0` o superior |
+| **Git** | Última versión |
+
+### Sistema Operativo
+- **Plataforma objetivo**: Windows (Escritorio)
+- **Compatibilidad**: También funciona en macOS y Linux
+
+---
+
+## 📥 Instalación
+
+### 1️⃣ Preparar el Entorno
+
+Crea una carpeta para el proyecto en tu ubicación preferida:
+```bash
+mkdir alma-deportes-proyecto
+cd alma-deportes-proyecto
 ```
 
-1. Crear una nueva carpeta donde alojar el proyecto
+### 2️⃣ Clonar el Repositorio
 
-2. Abrir la carpeta en Visual Studio Code
-
-3. Navegar hasta la terminal haciendo View > Terminal
-
-4. Clonar el repositorio con el siguiente comando:  
+Abre la carpeta en Visual Studio Code y ejecuta en la terminal:
+```bash
 git clone https://github.com/melanieaylen/Alma-deporte
-
+cd Alma-deporte
 ```
 
-### ▶️ Ejecutar el proyecto desde la terminal
-#### Asegurse de tener instalado Node.js
-```
-5. Una vez clonado el repositorio ejecuta el siguiente comando en la terminal: 
-> npm install 
+### 3️⃣ Instalar Dependencias
 
-6. Finalmente para ejecutar el proyecto utilizar el siguiente comando:
-> npm start
-El cual abrira una ventana en tu navegador predeterminado con la pagina web inicializada en la dirección `localhost:3000`
+Una vez dentro del directorio del proyecto, instala todas las dependencias necesarias:
+```bash
+npm install
 ```
 
+> ⏱️ Este proceso puede tomar algunos minutos dependiendo de tu conexión a internet.
+
+---
+
+## ▶️ Ejecución
+
+Para iniciar el servidor de desarrollo, ejecuta:
+```bash
+npm start
+```
+
+✨ **¡Listo!** El proyecto se abrirá automáticamente en tu navegador predeterminado en:
+```
+http://localhost:3000
+```
+
+### Comandos Adicionales
+
+| Comando | Descripción |
+|---------|-------------|
+| `npm start` | Inicia el servidor de desarrollo |
+| `npm run build` | Genera la versión de producción |
+| `npm test` | Ejecuta las pruebas |
+
+---
+
+## 🛠️ Tecnologías
+
+Este proyecto está construido con:
+
+- **JavaScript** - Lenguaje de programación
+- **React** - Biblioteca de interfaz de usuario
+- **Node.js** - Entorno de ejecución
+- **npm** - Gestor de paquetes
+
+---
+
+## 📞 Soporte
+
+Si encuentras algún problema durante la instalación o ejecución:
+
+1. Verifica que tengas instalada la versión correcta de Node.js: `node --version`
+2. Asegúrate de estar en el directorio correcto del proyecto
+3. Intenta eliminar `node_modules` y volver a ejecutar `npm install`
+
+---
+
+## 📄 Licencia
+
+Este proyecto es parte de un emprendimiento educativo.
+
+---
+
+<div align="center">
+
+**Desarrollado con ❤️ por el equipo de Alma Deportes**
+
+[🔝 Volver arriba](#-alma-deportes)
+
+</div>
