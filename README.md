@@ -31,7 +31,6 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ### Sistema Operativo
 - **Plataforma objetivo**: Windows (Escritorio)
-- **Compatibilidad**: También funciona en macOS y Linux
 
 ---
 
