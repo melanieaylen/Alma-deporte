@@ -49,7 +49,6 @@ cd alma-deportes-proyecto
 Abre la carpeta en Visual Studio Code y ejecuta en la terminal:
 ```bash
 git clone https://github.com/melanieaylen/Alma-deporte
-cd Alma-deporte
 ```
 
 ### 3️⃣ Instalar Dependencias
