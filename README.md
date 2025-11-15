@@ -17,7 +17,7 @@
 - [Ejecución](#️-ejecución)
 - [Tecnologías](#-tecnologías)
 
-## 📋 [Ver toda la informacion y manual del sistema](https://github.com/melanieaylen/Alma-deporte/wiki)
+📋 [Ver toda la informació y manual del sistema](https://github.com/melanieaylen/Alma-deporte/wiki)
 
 ---
 
