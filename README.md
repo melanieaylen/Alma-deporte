@@ -2,7 +2,7 @@
 
 > Página de Alma deportes desarrollado con React
 
-## 👥 Equipo de Desarrollo
+## 👥 Equipo
 
 - **Illa Cardozo Benjamín**
 - **Martínez Melanie**
